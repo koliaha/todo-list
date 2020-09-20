@@ -1,4 +1,6 @@
 # todo-list
+Посомотреть:
+https://koliaha.github.io/todo-list/
 
 ## Project setup
 ```
