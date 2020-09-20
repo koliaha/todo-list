@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="wrap" >
-      <span :class="{done: todo.complited}">
+      <span :class="{done: todo.complited}" class="item_field">
         <input type="checkbox" name id @change="todo.complited = !todo.complited" />
-        <strong class="title" @click="todo.complited = !todo.complited">{{todo.title | uppercase}}</strong>
+        <p class="title" @click="todo.complited = !todo.complited">{{todo.title | uppercase}}</p>
         <strong class="date">{{todo.date}}</strong>
       </span>
       <div class="btn__group">
@@ -52,6 +52,18 @@ export default {
   line-height: 25px;
   margin: 0 20px;
   cursor: pointer;
+  width: 70%;
+  display: block;
+  word-wrap: break-word;
+}
+.item_field{
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn__group{
+  width: 25%;
 }
 .date {
   font-size: 17px;
@@ -103,5 +115,14 @@ export default {
   height: 30px;
   font-size: 15px;
 } 
+.item_field{
+  width: 100%;
+}
+.title {
+    width: 50%;
+}
+.btn__group{
+  width: 100%;
+}
 }
 </style>

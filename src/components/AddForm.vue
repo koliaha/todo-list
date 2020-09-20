@@ -56,7 +56,7 @@ export default {
   }
 };
 </script>
-<style  lang='scss' scope>
+<style  lang='scss' >
 $primary: #11998e;
 $secondary: #38ef7d;
 $white: #fff;

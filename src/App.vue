@@ -13,7 +13,7 @@
         </select>
       </div>
       <Edit v-if="editing" @edit-todo="editedTodo" :editId="editId" />
-      <Loading v-if="loading" />
+      <Loading v-else-if="loading"/>
       <TodoList
         v-else-if="filterTodo.length"
         :todos="filterTodo"
